@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Search-Engine-Forms</title>
+</head>
+<body>
+    
+    <!-- Form tag w/action attribute...sets where the data from the form will be accessing -->
+    <!-- The method attribute tells the form how the data will be used...'get' is used to request data from a specific source...there are others...-->
+    <form action="https://www.google.com/search" method="get" target="_blank" style="border: solid 3px grey; padding: 10px"> <!--Used target="_blank" to make the results open in a new window-->
+        <!-- Found free icons @ https://www.flaticon.com/ -->
+        <img src="google.png" alt="Google search logo">
+        <!-- The type attribute needs to be set to 'search'(we've seen 'text' before)...the name attribute set to 'q' for query
+         I set this input to required to stop it from just going to google.com when nothing has been inputted. -->
+        <input type="search" name="q" placeholder="Google" required>
+        <!-- The type attribute should be set to 'submit' value, in order for the input to use the button to initialize request -->
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <!-- This form is for a search query from Bing.com -->
+    <form action="https://www.bing.com/search" method="get" target="_blank" style="border: solid 3px teal; padding: 10px"> <!--Used target="_blank" to make the results open in a new window-->
+        <img src="bing.png" alt="Bing logo">
+        <input type="search" name="q" placeholder="Bing">
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <!-- This form is for a search query from Yahoo!.com -->
+    <form action="https://search.yahoo.com/search" method="get" target="_blank" style="border: solid 3px purple; padding: 10px"> <!--Used target="_blank" to make the results open in a new window-->
+        <img src="yahoo.png" alt="Yahoo logo">
+        <!-- The placeholder attribute displays text in the text field...Usually to help user know what to type in the input. -->
+        <input type="search" name="q" placeholder="Yahoo!">
+        <button type="submit">Search</button>
+    </form>
+    
+</body>
+</html>
